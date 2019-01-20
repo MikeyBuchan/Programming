@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4460045183241640}
   - component: {fileID: 33940313045742148}
   - component: {fileID: 23243101245755482}
-  - component: {fileID: 65821631114566250}
+  - component: {fileID: 65622895639885526}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Rock
@@ -84,7 +84,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1421682965324124}
   m_Mesh: {fileID: 4300000, guid: 44bbcee5957d772488e7340a635ca637, type: 3}
---- !u!65 &65821631114566250
+--- !u!65 &65622895639885526
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,5 +94,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1795448, y: 0.88484144, z: 1.0987374}
-  m_Center: {x: -0.06773341, y: 0.44242072, z: -0.020086288}
+  m_Size: {x: 1.1795448, y: 1.4, z: 1.0987374}
+  m_Center: {x: -0.06773341, y: 0.7, z: -0.020086288}

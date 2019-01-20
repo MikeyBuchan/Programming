@@ -98,14 +98,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resourceManager: {fileID: 0}
+  startLocObject: {fileID: 1427420025711182, guid: c7034eb837bac864d95d4a85b728ba91,
+    type: 2}
   startLoc: {fileID: 0}
-  chooseResource: 0
-  colliderRange: 0.6
+  colliderRange: 0.53
   carrying: 
+  sellHouse: {fileID: 0}
+  chooseResource: 0
   doing: 0
   agent: {fileID: 0}
   target: {fileID: 0}
-  objectTarget: {fileID: 0}
+  targetObject: {fileID: 0}
 --- !u!136 &136975331478465018
 CapsuleCollider:
   m_ObjectHideFlags: 1

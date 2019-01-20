@@ -9,16 +9,14 @@ public enum Harvester { Idle, CollectResource, SellResource }
 public class AI : MonoBehaviour 
 {
     public GameObject resourceManager;
+    public GameObject startLocObject;
     public Transform startLoc;
+    public float colliderRange;
+    public string carrying;
+    public GameObject sellHouse;
 
     //this bool makes sure the "AI Guy" doesn't change target every frame
     public bool chooseResource = false;
-
-    public float colliderRange;
-
-    public string carrying;
-
-    public GameObject sellHouse;
 
     [Header("Enum")]
     public Harvester doing;
@@ -31,10 +29,12 @@ public class AI : MonoBehaviour
 
 	void Start () 
 	{
+        GameObject g = Instantiate(startLocObject, transform.position, Quaternion.identity);
+        startLoc = g.transform;
+
         agent = GetComponent<NavMeshAgent>();
 
         resourceManager = GameObject.FindGameObjectWithTag("ResourceManager");
-        startLoc = transform;
         sellHouse = GameObject.FindGameObjectWithTag("Sellhouse");
 	}
 	
@@ -92,23 +92,33 @@ public class AI : MonoBehaviour
         }
 
         //Checks if the object is still in the scene and if it is not it will choose another random object
-        if (target == null)
+        if (resources.Count != 0)
         {
-            target = resources[Random.Range(0, resources.Count)].transform;
-            targetObject = target.gameObject;
-            agent.SetDestination(target.position);
-            print("Couldn't get to chosen resource. Changed resource target");
+            if (target == null)
+            {
+                target = resources[Random.Range(0, resources.Count)].transform;
+                targetObject = target.gameObject;
+                agent.SetDestination(target.position);
+                print("Couldn't get to chosen resource. Changed resource target");
+            }
+        }
+        else if(resources.Count == 0)
+        {
+            doing = Harvester.Idle;
         }
 
         //Checks if the "AI Guy" collides with the targetObject
-        if (selfRange[0].gameObject == targetObject)
+        for (int i = 0; i < selfRange.Length; i++)
         {
-            carrying = targetObject.tag;
-            resources.Remove(selfRange[0].gameObject);
-            Destroy(selfRange[0].gameObject);
+            if (selfRange[i].gameObject == targetObject)
+            {
+                carrying = targetObject.tag;
+                resources.Remove(selfRange[i].gameObject);
+                Destroy(selfRange[i].gameObject);
 
-            doing = Harvester.SellResource;
-            print("Harvested resource target. Going to next state: doing = Harvester.SellResource");
+                doing = Harvester.SellResource;
+                print("Harvested resource target. Going to next state: doing = Harvester.SellResource");
+            }
         }
     }
 
@@ -119,10 +129,13 @@ public class AI : MonoBehaviour
 
         Collider[] selfRange = Physics.OverlapSphere(transform.position, colliderRange);
 
-        if (selfRange[0].tag == "Sellhouse")
+        for (int i = 0; i < selfRange.Length; i++)
         {
-            doing = Harvester.Idle;
-            print("Sold resource. doing = Harvester.Idle");
+            if (selfRange[i].gameObject.tag == "Sellhouse")
+            {
+                doing = Harvester.Idle;
+                print("Sold resource. doing = Harvester.Idle");
+            }
         }
     }
 
