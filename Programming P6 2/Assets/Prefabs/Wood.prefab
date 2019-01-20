@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4711335755030640}
   - component: {fileID: 33264653272653330}
   - component: {fileID: 23543532631537010}
+  - component: {fileID: 65647627395322770}
+  - component: {fileID: 208066155870112884}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Wood
@@ -36,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1079064508288860}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.3244567, y: 8.7681886e-17, z: -3.9488409}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 3, y: 8, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,3 +85,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1079064508288860}
   m_Mesh: {fileID: 4300000, guid: a7df35ac2001d514fb63cd4ca8192761, type: 3}
+--- !u!65 &65647627395322770
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1079064508288860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.31319922, y: 0.101976305, z: 0.6666667}
+  m_Center: {x: -0.0034337118, y: 0.050988138, z: 0}
+--- !u!208 &208066155870112884
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1079064508288860}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.157, y: 0.051000003, z: 0.333}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: -0.003, y: 0.051000003, z: 0}
+  m_TimeToStationary: 0.5

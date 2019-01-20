@@ -8,6 +8,7 @@ TagManager:
   - Wood
   - Sellhouse
   - Rock
+  - ResourceManager
   layers:
   - Default
   - TransparentFX

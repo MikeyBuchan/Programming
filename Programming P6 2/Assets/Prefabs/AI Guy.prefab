@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33340304934971432}
   - component: {fileID: 23032215538032608}
   - component: {fileID: 136975331478465018}
+  - component: {fileID: 195798808221620626}
   - component: {fileID: 114346834580840802}
   m_Layer: 0
   m_Name: AI Guy
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1104549832145154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -96,6 +97,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ff82e3fa050e24b9ca03b954d5b4ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resourceManager: {fileID: 0}
+  startLoc: {fileID: 0}
+  chooseResource: 0
+  colliderRange: 0.6
+  carrying: 
+  doing: 0
+  agent: {fileID: 0}
+  target: {fileID: 0}
+  objectTarget: {fileID: 0}
 --- !u!136 &136975331478465018
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -109,3 +119,24 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!195 &195798808221620626
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1104549832145154}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 360
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
