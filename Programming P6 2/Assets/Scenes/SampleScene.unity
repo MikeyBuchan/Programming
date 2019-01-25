@@ -378,6 +378,11 @@ Prefab:
       propertyPath: m_Name
       value: Rock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114043406643447208, guid: 20c2f881537133f4cb566f293764ea7f,
+        type: 2}
+      propertyPath: hasIron
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20c2f881537133f4cb566f293764ea7f, type: 2}
   m_IsPrefabAsset: 0
@@ -574,6 +579,11 @@ Prefab:
       propertyPath: m_Name
       value: Wood (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114696380810668568, guid: 279399a4b47495c49b58dbbe6b4cadf1,
+        type: 2}
+      propertyPath: isInfested
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 279399a4b47495c49b58dbbe6b4cadf1, type: 2}
   m_IsPrefabAsset: 0
@@ -624,6 +634,11 @@ Prefab:
     - target: {fileID: 4711335755030640, guid: 279399a4b47495c49b58dbbe6b4cadf1, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114696380810668568, guid: 279399a4b47495c49b58dbbe6b4cadf1,
+        type: 2}
+      propertyPath: isInfested
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 279399a4b47495c49b58dbbe6b4cadf1, type: 2}
@@ -783,6 +798,11 @@ Prefab:
       propertyPath: m_Size.y
       value: 0.14
       objectReference: {fileID: 0}
+    - target: {fileID: 114696380810668568, guid: 279399a4b47495c49b58dbbe6b4cadf1,
+        type: 2}
+      propertyPath: isInfested
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 279399a4b47495c49b58dbbe6b4cadf1, type: 2}
   m_IsPrefabAsset: 0
@@ -888,6 +908,11 @@ Prefab:
     - target: {fileID: 1079064508288860, guid: 279399a4b47495c49b58dbbe6b4cadf1, type: 2}
       propertyPath: m_Name
       value: Wood (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114696380810668568, guid: 279399a4b47495c49b58dbbe6b4cadf1,
+        type: 2}
+      propertyPath: isInfested
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 279399a4b47495c49b58dbbe6b4cadf1, type: 2}
@@ -1387,6 +1412,11 @@ Prefab:
       propertyPath: m_Name
       value: Rock (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114043406643447208, guid: 20c2f881537133f4cb566f293764ea7f,
+        type: 2}
+      propertyPath: hasIron
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20c2f881537133f4cb566f293764ea7f, type: 2}
   m_IsPrefabAsset: 0
@@ -1441,6 +1471,11 @@ Prefab:
     - target: {fileID: 1079064508288860, guid: 279399a4b47495c49b58dbbe6b4cadf1, type: 2}
       propertyPath: m_Name
       value: Wood (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114696380810668568, guid: 279399a4b47495c49b58dbbe6b4cadf1,
+        type: 2}
+      propertyPath: isInfested
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 279399a4b47495c49b58dbbe6b4cadf1, type: 2}
@@ -1502,6 +1537,11 @@ Prefab:
         type: 2}
       propertyPath: m_Center.y
       value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114043406643447208, guid: 20c2f881537133f4cb566f293764ea7f,
+        type: 2}
+      propertyPath: hasIron
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20c2f881537133f4cb566f293764ea7f, type: 2}
@@ -1696,6 +1736,11 @@ Prefab:
     - target: {fileID: 1421682965324124, guid: 20c2f881537133f4cb566f293764ea7f, type: 2}
       propertyPath: m_Name
       value: Rock (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114043406643447208, guid: 20c2f881537133f4cb566f293764ea7f,
+        type: 2}
+      propertyPath: hasIron
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20c2f881537133f4cb566f293764ea7f, type: 2}

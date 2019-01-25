@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33264653272653330}
   - component: {fileID: 23543532631537010}
   - component: {fileID: 65647627395322770}
+  - component: {fileID: 114696380810668568}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Wood
@@ -96,3 +97,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.31319922, y: 0.14, z: 0.6666667}
   m_Center: {x: -0.0034337118, y: 0.07, z: 0}
+--- !u!114 &114696380810668568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1079064508288860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d122c26e4a57348b78c3014a928840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceName: Wood
+  itemValue: 50
